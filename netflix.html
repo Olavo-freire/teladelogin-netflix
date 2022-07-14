@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title> 
+    <style>
+    img{
+        width:9.4rem;
+        position: relative;
+        top: 25px; left: 1cm;
+        margin: auto;
+    }
+        
+    body{
+        background-color: rgb(69, 63, 63);
+        background-image: url(https://viciados.net/wp-content/uploads/2019/09/fala-universidades-netflix-3-1980x1114.jpg);
+        background-blend-mode:soft-light;      
+    }
+           
+    input#id01{
+        position:relative;
+        top:2rem; left:1.3rem;
+        width: 300px;
+        height:50px;
+        background-color: rgb(60, 58, 58);
+        border-radius: 10px;         
+    }
+    input#senha{
+        position:relative;
+        top:3.5rem; left:1.3rem;
+        width: 300px;
+        height:50px;
+        background-color: rgb(60, 58, 58);
+        border-radius: 10px;
+    }   
+    div{
+        font: normal 35pt helvetica;
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 2px;
+        width: 230px;
+        line-height:50px ;
+        position: relative;
+        top:2rem; left:1rem;
+    }
+    input#botao{
+        background: red;
+        color: white;
+        font: normal 15pt helvetica;
+        width: 309px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.316);
+        position: relative;
+        top:4.5rem; left:1.3rem;
+    }
+    section{
+        width: 350px;
+        height: 500px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.523);
+        position: relative;  
+        margin: auto;
+        top:6rem;
+    }
+    p#txt01{
+        font: normal 15pt arial;
+        color: rgb(151, 147, 147);
+        position: relative;
+        top:8.8rem; left:1rem;
+    }
+    a{
+        font: normal 15pt arial;
+        color: aliceblue;
+        position:relative;
+        top:6rem; left:10rem;
+    }
+    input#lembrar{
+        position:relative;
+        top:7.5rem; right:290px;
+        height: 1rem;
+        width: 1rem;
+        border-radius:2px;
+    }
+    p#txt02{
+        font: normal 11pt arial;
+        color: aliceblue;
+        position: relative;
+        top:4.45rem; left:3rem;
+    }
+    </style>
+</head>
+<body>
+     <img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-6.png">
+     
+    
+    
+    <section>
+    <div id="entrar">Entrar</div><br>
+    <input type="text" name="id01" id="id01" placeholder="Email ou numero de telefone"><br>
+    <input type="text" name="senha" id="senha" placeholder="Senha"> <br>
+    <input type="button" id="botao" value="Entrar" onclick="entrar()">
+    <input type="checkbox" id="lembrar" onclick="lembrar()"> <p id="txt02">Lembre-se de mim</p>
+    <p id="txt01">Novo por aqui?</p>
+    <a href="https://www.netflix.com/">Assine agora!</a>
+    </section>
+    <script> 
+    var guardar=[]
+    var res = document.querySelector("div#entrar")
+     function entrar(){
+        var dado =[document.getElementById('id01'),document.getElementById('senha')]
+        var dd1=String(dado[0].value)
+        var dd2=String(dado[1].value)     
+           if(dd1=='projeto@gmail.com' && dd2=='projeto1'){
+               alert('SEJA BEM VINDO')
+            }else{
+               alert('DADOS INCORRETOS TENTE NOVAMENTE!')
+            }
+       }function lembrar(){
+        guardar.push(document.getElementById('id01'),document.getElementById('senha'))
+    }
+    </script>
+</body>
+</html>
