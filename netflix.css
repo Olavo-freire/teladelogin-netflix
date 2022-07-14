@@ -1,0 +1,83 @@
+img{
+    width:9.4rem;
+    position: relative;
+    top: 25px; left: 1cm;
+    margin: auto;
+}
+    
+body{
+    background-color: rgb(69, 63, 63);
+    background-image: url(https://viciados.net/wp-content/uploads/2019/09/fala-universidades-netflix-3-1980x1114.jpg);
+    background-blend-mode:soft-light;      
+}
+       
+input#id01{
+    position:relative;
+    top:2rem; left:1.3rem;
+    width: 300px;
+    height:50px;
+    background-color: rgb(60, 58, 58);
+    border-radius: 10px;         
+}
+input#senha{
+    position:relative;
+    top:3.5rem; left:1.3rem;
+    width: 300px;
+    height:50px;
+    background-color: rgb(60, 58, 58);
+    border-radius: 10px;
+}   
+div{
+    font: normal 35pt helvetica;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px;
+    width: 230px;
+    line-height:50px ;
+    position: relative;
+    top:2rem; left:1rem;
+}
+input#botao{
+    background: red;
+    color: white;
+    font: normal 15pt helvetica;
+    width: 309px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.316);
+    position: relative;
+    top:4.5rem; left:1.3rem;
+}
+section{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.863);
+    position: relative;  
+    margin: auto;
+    top:6rem;
+}
+p#txt01{
+    font: normal 15pt arial;
+    color: rgb(151, 147, 147);
+    position: relative;
+    top:8.8rem; left:1rem;
+}
+a{
+    font: normal 15pt arial;
+    color: aliceblue;
+    position:relative;
+    top:6rem; left:10rem;
+}
+input#lembrar{
+    position:relative;
+    top:7.5rem; right:290px;
+    height: 1rem;
+    width: 1rem;
+    border-radius:2px;
+}
+p#txt02{
+    font: normal 11pt arial;
+    color: aliceblue;
+    position: relative;
+    top:4.45rem; left:3rem;
+}
